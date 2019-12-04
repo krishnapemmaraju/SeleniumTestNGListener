@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TestNGAutomationAddressBookWebsite]">
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="com.testng.listner.extentreports.ExtentReportListener"/>
+  </listeners>
+  <test thread-count="5" name="TestNGAutomationAddressBookWebSite(failed)">
+    <classes>
+      <class name="com.testng.listner.testcases.AddrBookNewAddresCreationTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="endReport"/>
+          <include name="setExtentReports"/>
+          <include name="SkippingMethod"/>
+          <include name="setUp"/>
+          <include name="validatePageTitle"/>
+        </methods>
+      </class> <!-- com.testng.listner.testcases.AddrBookNewAddresCreationTest -->
+    </classes>
+  </test> <!-- TestNGAutomationAddressBookWebSite(failed) -->
+</suite> <!-- Failed suite [TestNGAutomationAddressBookWebsite] -->

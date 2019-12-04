@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="TestNGAutomationAddressBookWebsite" >
+<listeners>
+  <listener class-name="com.testng.listner.extentreports.ExtentReportListener" > </listener>
+</listeners>
+  <parameter name="browser" value="chrome" />
+<test name ="TestNGAutomationAddressBookWebSite">
+    <classes>
+       <class name = "com.testng.listner.testcases.AddrBookNewAddresCreationTest"> 
+       </class>
+    </classes>
+</test>
+</suite>

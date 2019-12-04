@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-TestNGAutomationAddressBookWebsite">
+              <span class="suite-name border-failed">TestNGAutomationAddressBookWebsite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-TestNGAutomationAddressBookWebsite">
+                    <span>C:\Users\kpemmaraju\eclipse-workspace\TestNGProjectUsingTestListner\src\main\resources\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-TestNGAutomationAddressBookWebsite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-TestNGAutomationAddressBookWebsite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-TestNGAutomationAddressBookWebsite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-TestNGAutomationAddressBookWebsite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-TestNGAutomationAddressBookWebsite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-TestNGAutomationAddressBookWebsite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">3 methods, 1 failed,  1 skipped,  1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-TestNGAutomationAddressBookWebsite" class="hide-methods failed suite-TestNGAutomationAddressBookWebsite"> (hide)</a> <!-- hide-methods failed suite-TestNGAutomationAddressBookWebsite -->
+                      <a href="#" panel-name="suite-TestNGAutomationAddressBookWebsite" class="show-methods failed suite-TestNGAutomationAddressBookWebsite"> (show)</a> <!-- show-methods failed suite-TestNGAutomationAddressBookWebsite -->
+                    </span>
+                    <div class="method-list-content failed suite-TestNGAutomationAddressBookWebsite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestNGAutomationAddressBookWebsite" title="com.testng.listner.testcases.AddrBookNewAddresCreationTest" hash-for-method="validatePageTitle">validatePageTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-TestNGAutomationAddressBookWebsite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-TestNGAutomationAddressBookWebsite" class="hide-methods skipped suite-TestNGAutomationAddressBookWebsite"> (hide)</a> <!-- hide-methods skipped suite-TestNGAutomationAddressBookWebsite -->
+                      <a href="#" panel-name="suite-TestNGAutomationAddressBookWebsite" class="show-methods skipped suite-TestNGAutomationAddressBookWebsite"> (show)</a> <!-- show-methods skipped suite-TestNGAutomationAddressBookWebsite -->
+                    </span>
+                    <div class="method-list-content skipped suite-TestNGAutomationAddressBookWebsite">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestNGAutomationAddressBookWebsite" title="com.testng.listner.testcases.AddrBookNewAddresCreationTest" hash-for-method="SkippingMethod">SkippingMethod</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-TestNGAutomationAddressBookWebsite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-TestNGAutomationAddressBookWebsite" class="hide-methods passed suite-TestNGAutomationAddressBookWebsite"> (hide)</a> <!-- hide-methods passed suite-TestNGAutomationAddressBookWebsite -->
+                      <a href="#" panel-name="suite-TestNGAutomationAddressBookWebsite" class="show-methods passed suite-TestNGAutomationAddressBookWebsite"> (show)</a> <!-- show-methods passed suite-TestNGAutomationAddressBookWebsite -->
+                    </span>
+                    <div class="method-list-content passed suite-TestNGAutomationAddressBookWebsite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestNGAutomationAddressBookWebsite" title="com.testng.listner.testcases.AddrBookNewAddresCreationTest" hash-for-method="addNewAddressCust(YGHTestDS, YGHTestWS, TestAvenueData, TestSecondaryAddr, Manchester, AL, 87878, 12/02/2009, 32, 9000...)">addNewAddressCust(YGHTestDS, YGHTestWS, TestAvenueData, TestSecondaryAddr, Manchester, AL, 87878, 12/02/2009, 32, 9000...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-TestNGAutomationAddressBookWebsite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-TestNGAutomationAddressBookWebsite" class="panel TestNGAutomationAddressBookWebsite">
+          <div class="suite-TestNGAutomationAddressBookWebsite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.testng.listner.testcases.AddrBookNewAddresCreationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validatePageTitle">
+                  </a> <!-- validatePageTitle -->
+                  <span class="method-name">validatePageTitle</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Addressss Book] but found [Address Book]
+	at com.testng.listner.testcases.AddrBookNewAddresCreationTest.validatePageTitle(AddrBookNewAddresCreationTest.java:61)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestNGAutomationAddressBookWebsite-class-failed -->
+          <div class="suite-TestNGAutomationAddressBookWebsite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.testng.listner.testcases.AddrBookNewAddresCreationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SkippingMethod">
+                  </a> <!-- SkippingMethod -->
+                  <span class="method-name">SkippingMethod</span>
+                  <div class="stack-trace">org.testng.SkipException: This method is Skipped
+	at com.testng.listner.testcases.AddrBookNewAddresCreationTest.SkippingMethod(AddrBookNewAddresCreationTest.java:80)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestNGAutomationAddressBookWebsite-class-skipped -->
+          <div class="suite-TestNGAutomationAddressBookWebsite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.testng.listner.testcases.AddrBookNewAddresCreationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addNewAddressCust(YGHTestDS, YGHTestWS, TestAvenueData, TestSecondaryAddr, Manchester, AL, 87878, 12/02/2009, 32, 9000...)">
+                  </a> <!-- addNewAddressCust(YGHTestDS, YGHTestWS, TestAvenueData, TestSecondaryAddr, Manchester, AL, 87878, 12/02/2009, 32, 9000...) -->
+                  <span class="method-name">addNewAddressCust</span>
+                  <span class="parameters">(YGHTestDS, YGHTestWS, TestAvenueData, TestSecondaryAddr, Manchester, AL, 87878, 12/02/2009, 32, 900090909)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestNGAutomationAddressBookWebsite-class-passed -->
+        </div> <!-- panel TestNGAutomationAddressBookWebsite -->
+        <div panel-name="test-xml-TestNGAutomationAddressBookWebsite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\kpemmaraju\eclipse-workspace\TestNGProjectUsingTestListner\src\main\resources\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;TestNGAutomationAddressBookWebsite&quot;&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.testng.listner.extentreports.ExtentReportListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;TestNGAutomationAddressBookWebSite&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.testng.listner.testcases.AddrBookNewAddresCreationTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- TestNGAutomationAddressBookWebSite --&gt;
+&lt;/suite&gt; &lt;!-- TestNGAutomationAddressBookWebsite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-TestNGAutomationAddressBookWebsite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for TestNGAutomationAddressBookWebsite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">TestNGAutomationAddressBookWebSite (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-TestNGAutomationAddressBookWebsite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for TestNGAutomationAddressBookWebsite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-TestNGAutomationAddressBookWebsite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for TestNGAutomationAddressBookWebsite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_TestNGAutomationAddressBookWebsite');
+function tableData_TestNGAutomationAddressBookWebsite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(3);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'addNewAddressCust')
+data.setCell(0, 2, 'com.testng.listner.testcases.AddrBookNewAddresCreationTest')
+data.setCell(0, 3, 4249);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'validatePageTitle')
+data.setCell(1, 2, 'com.testng.listner.testcases.AddrBookNewAddresCreationTest')
+data.setCell(1, 3, 19);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'SkippingMethod')
+data.setCell(2, 2, 'com.testng.listner.testcases.AddrBookNewAddresCreationTest')
+data.setCell(2, 3, 3);
+window.suiteTableData['TestNGAutomationAddressBookWebsite']= { tableData: data, tableDiv: 'times-div-TestNGAutomationAddressBookWebsite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <div id="times-div-TestNGAutomationAddressBookWebsite">
+              </div> <!-- times-div-TestNGAutomationAddressBookWebsite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-TestNGAutomationAddressBookWebsite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for TestNGAutomationAddressBookWebsite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-TestNGAutomationAddressBookWebsite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-TestNGAutomationAddressBookWebsite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.testng.listner.testcases.AddrBookNewAddresCreationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setExtentReports</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">171 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validatePageTitle</span>
+                <span class="method-start">13127 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown([TestResult name=validatePageTitle status=FAILURE method=AddrBookNewAddresCreationTest.validatePageT...)</span>
+                <span class="method-start">13148 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">15020 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addNewAddressCust(YGHTestDS, YGHTestWS, TestAvenueData, TestSecondaryAddr, Manchester, AL, 87878, 12/02/2009, 32, 9000...)</span>
+                <span class="method-start">26796 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown([TestResult name=addNewAddressCust status=SUCCESS method=AddrBookNewAddresCreationTest.addNewAddress...)</span>
+                <span class="method-start">31046 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">32241 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">SkippingMethod</span>
+                <span class="method-start">44006 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown([TestResult name=SkippingMethod status=SKIP method=AddrBookNewAddresCreationTest.SkippingMethod()[pr...)</span>
+                <span class="method-start">44011 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">endReport</span>
+                <span class="method-start">44732 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
