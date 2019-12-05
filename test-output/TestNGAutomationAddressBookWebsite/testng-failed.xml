@@ -12,7 +12,6 @@
           <include name="teardown"/>
           <include name="endReport"/>
           <include name="setExtentReports"/>
-          <include name="SkippingMethod"/>
           <include name="setUp"/>
           <include name="validatePageTitle"/>
         </methods>

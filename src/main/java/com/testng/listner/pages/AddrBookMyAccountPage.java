@@ -1,7 +1,9 @@
 package com.testng.listner.pages;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -10,6 +12,8 @@ import com.testng.listner.Base.BaseClass;
 import com.testng.listner.utils.TestUtils;
 
 public class AddrBookMyAccountPage extends BaseClass {
+	
+	ArrayList<String> alist = new ArrayList<String>();
 	
 	@FindBy(xpath="//*[@id='navbar']/div[2]/span")
 	WebElement getMyAccAddrBookEmail;
@@ -96,8 +100,9 @@ public class AddrBookMyAccountPage extends BaseClass {
 	
 	//Method to Click on New Address 
 	
-	public void AddNewAddressData(String addrFirstName,String addrLastName,String newAddrStreetAddrdata,String newAddrSecondaryAddress,String newAddrCityData,String newAddrStateData,String newAddrzipCode,String newAddrBirthDayData,String newAddrAgeData,String newAddrMobilePhone ) throws IOException {
+	public void AddNewAddressData(String addrFirstName,String addrLastName,String newAddrStreetAddrdata,String newAddrSecondaryAddress,String newAddrCityData,String newAddrStateData,String newAddrzipCode,String newAddrBirthDayData,String newAddrAgeData,String newAddrMobilePhone ) throws IOException, InvalidFormatException, InterruptedException {
 		addrBookAddressLink.click();
+        alist.add(TestUtils.takeScreenShot("For NewAddressBookHomePage"));
 		addrBookNewAddrLink.click();
 		newAddrFirstName.sendKeys(addrFirstName);
 		newAddrLastName.sendKeys(addrLastName);
@@ -110,9 +115,11 @@ public class AddrBookMyAccountPage extends BaseClass {
 		newAddrBirthDay.sendKeys(newAddrBirthDayData);
 		newAddrAge.sendKeys(newAddrAgeData);
 		newAddrPhone.sendKeys(newAddrMobilePhone);
+        alist.add(TestUtils.takeScreenShot("After_NewAddressFillingData"));
 		newAddrCommInterest.click();
-		TestUtils.takeScreenShot("AddingNewAddress");
 		newAddressCreate.click();
+        alist.add(TestUtils.takeScreenShot("After_NewAddressSuccessMessage"));
+		TestUtils.getIndividualScreenshot(alist,"NewAddressDataLink");
 	}
 	
 	public String getSuccesMessageText() {

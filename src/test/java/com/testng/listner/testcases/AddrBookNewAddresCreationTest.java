@@ -3,6 +3,7 @@ package com.testng.listner.testcases;
 import java.io.IOException;
 
 import org.apache.poi.EncryptedDocumentException;
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.SkipException;
@@ -68,17 +69,17 @@ public class AddrBookNewAddresCreationTest extends BaseClass {
 	}
 	
 	@Test(priority=2,dataProvider = "getDataFromExcel")
-	public void addNewAddressCust(String addrFirstName, String addrLastName,String newAddrStreetAddrData,String newAddrSecondaryAddress,String newAddrCityData,String newAddrStateData,String newAddrzipCode,String newAddrBirthDayData,String newAddrAgeData,String newAddrMobilePhone) throws IOException {
+	public void addNewAddressCust(String addrFirstName, String addrLastName,String newAddrStreetAddrData,String newAddrSecondaryAddress,String newAddrCityData,String newAddrStateData,String newAddrzipCode,String newAddrBirthDayData,String newAddrAgeData,String newAddrMobilePhone) throws IOException, InvalidFormatException, InterruptedException {
 		extLogger=extReports.startTest("New Customer Address Creation");
 		myAccountPage.AddNewAddressData(addrFirstName,addrLastName,newAddrStreetAddrData,newAddrSecondaryAddress,newAddrCityData,newAddrStateData,newAddrzipCode,newAddrBirthDayData,newAddrAgeData,newAddrMobilePhone);
 	    Assert.assertEquals(myAccountPage.getSuccesMessageText(), "Address was successfully created.");
 	}
 	
-	@Test(priority=3)
+	/*@Test(priority=3)
 	public void SkippingMethod() {
 		extLogger= extReports.startTest("Skipping Method");
 		throw new SkipException("This method is Skipped");
-	}
+	}*/
 	
 	@AfterMethod
 	public void teardown(ITestResult result) throws IOException {

@@ -10,7 +10,6 @@
           <include name="endReport"/>
           <include name="setExtentReports"/>
           <include name="addNewAddressCust"/>
-          <include name="SkippingMethod"/>
           <include name="setUp"/>
           <include name="validatePageTitle"/>
         </methods>
